@@ -21,5 +21,7 @@ function App() {
     </div>
   );
 }
-
+// export命令定义了模块的对外接口
+// export default命令，为模块指定默认输出。
+// 使用export命令定义了模块的对外接口以后，其他 JS 文件就可以通过import命令加载这个模块。
 export default App;
