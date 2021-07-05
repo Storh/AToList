@@ -13,14 +13,17 @@ class Square extends React.Component {
             <button className="square">
                 {this.props.value}
             </button>
+            // Square 组件接收到的参数（props）有value，所以用this.props来显示value
         );
     }
 }
 
 // Board 组件渲染了 9 个方块
 class Board extends React.Component {
+    // renderSquare 方法返回一个Square 组件，及渲染的单独按键
     renderSquare(i) {
-        return <Square />;
+        return <Square value={i} />;
+        // 给Square 组件传递一个参数i，通过 Props 传递数据
     }
 
     render() {
