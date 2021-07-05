@@ -5,10 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
+    <h1>Hello, world!</h1>
+  </div>,
   document.getElementById('root')
+  // 返回指定 ID 的元素：
+  // 缺少会导致 Error: Target container is not a DOM element.
+  // 和ReactDOM有关
+  // https://zh-hans.reactjs.org/docs/react-dom.html
 );
 
 // If you want to start measuring performance in your app, pass a function
