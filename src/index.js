@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Game from './TicTacToe'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <div>
     <App />
     <h1>Hello, world!</h1>
+    <Game />
   </div>,
   document.getElementById('root')
   // 返回指定 ID 的元素：
