@@ -10,7 +10,7 @@ class Square extends React.Component {
         // render 方法的返回值描述了你希望在屏幕上看到的内容,render 返回了一个 React 元素
         // 语法 <div /> 会被编译成 React.createElement('div')
         return (
-            <button className="square">
+            <button className="square" onClick={()=>{alert('click!')}}>
                 {this.props.value}
             </button>
             // Square 组件接收到的参数（props）有value，所以用this.props来显示value
